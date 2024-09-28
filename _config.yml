@@ -10,7 +10,8 @@ relative_permalinks: false
 title:            Matthew Hurtado
 tagline:          ''
 description:      'Student, Tutor, Researcher'
-url:              http://hyde.getpoole.com
+url:              "https://mehurtado.github.io"
+
 baseurl:          ''
 
 author:
