@@ -1,34 +1,66 @@
 # Dependencies
 markdown: kramdown
-highlighter:      pygments
+highlighter: pygments # Consider Rouge for broader language support if needed
 
 # Permalinks
-permalink:        pretty
-relative_permalinks: false
+permalink: pretty
+relative_permalinks: false # Recommended to keep as false for most setups
 
 # Setup
-title:            Matthew Hurtado
-tagline:          ''
-description:      'Student, Tutor, Researcher'
-url:              "https://mehurtado.github.io"
+title: Matthew Hurtado
+tagline: 'Computer Science & Mathematics at RPI | Physics Enthusiast' # Updated tagline
+description: 'Student, Tutor, Researcher'
+url: "https://mehurtado.github.io" # Base URL of your site
 
-baseurl:          ''
+baseurl: '' # Keep empty if hosting at username.github.io
 
 author:
-  name:           Matthew Hurtado
-  url:            matthew.e.hurtado@gmail.com
+  name: Matthew Hurtado
+  url: "https://github.com/mehurtado" # Changed to GitHub profile, or use site.url
 
-paginate:         5
+paginate: 5
 
-plugins: 
- - jekyll-paginate
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag # Recommended for better SEO
+  - jekyll-sitemap # Recommended for sitemap generation
 
 # Custom vars
-version:          2.1.0
+version: 2.1.0 # Or update to a new version number for your site changes
 
-header_pages:
-  - about.md
-  - projects.md
+# Theme settings (if your theme supports them, Hyde is fairly minimal here)
+# sidebar_sticky: true # Example, Hyde might not use this directly in _config.yml
 
-github:
-  repo:           mehurtado.github.io
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+# - README.md # You might want to exclude or include this based on preference
+# - LICENSE.md
+
+# Jekyll SEO Tag settings (optional, but good to have)
+twitter:
+  username: your_twitter_handle # Add your Twitter handle if you have one
+  card: summary
+logo: /assets/images/your-logo.png # Add a path to a logo if you have one
+social:
+  name: Matthew Hurtado
+  links:
+    - https://twitter.com/your_twitter_handle
+    - https://github.com/mehurtado
+    # Add other social media links
