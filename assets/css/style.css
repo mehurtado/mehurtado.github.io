@@ -15,8 +15,8 @@ body {
 }
 
 .container { /* Ensure this class is used in layouts for content wrapping */
-  max-width: 1100px;
-  margin: 0 auto;
+  /* max-width: 1100px; */
+  /* margin: 0 auto; */
   padding: 0 20px; /* Add some horizontal padding */
 }
 
