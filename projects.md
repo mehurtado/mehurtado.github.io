@@ -1,9 +1,13 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: page
 title: Projects
 ---
 
 ### Quantum-Inspired Transformer-Based Financial Modeling
+Research project exploring machine learning models for financial forecasting using concepts from quantum computing.
+
+### Scheduling Web App
+A full-stack application that simplifies meeting scheduling with a responsive interface.
+
+### Physics Simulations
+Collection of small simulations written in Python to visualize classical mechanics problems.
