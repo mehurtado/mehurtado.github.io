@@ -11,3 +11,6 @@ Massively parallel discrete-event pandemic simulation using ROSS and MPI.
 
 ### [N-body Gravitational Simulator](https://github.com/mehurtado/Expanse)
 A C engine that simulates gravitational interactions between many bodies in space.
+
+### [ByteLM](https://github.com/mehurtado/ByteLM)
+A byte-level autoregressive language model currently under development.
