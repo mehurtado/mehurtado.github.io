@@ -1,35 +1,245 @@
+/* Import Open Sans from Google Fonts if not already in head.html - already there, but good practice */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* Global Resets and Base Styling */
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
+  background-color: #f4f7f6; /* Lighter, softer background */
   color: #333;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.content {
-  max-width: 960px;
+.container { /* Ensure this class is used in layouts for content wrapping */
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 20px; /* Add some horizontal padding */
 }
 
+/* Content Area */
+.content {
+  background-color: #ffffff; /* White background for content */
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem; /* Space from top or sidebar */
+  margin-bottom: 2rem; /* Space from bottom */
+}
+
+/* Hyde sidebar overrides and enhancements */
 .sidebar {
-  background-color: #343a40;
-  color: #fff;
-  padding: 1rem;
+  background-color: #2c3e50; /* Darker, more modern blue-gray */
+  color: #ecf0f1; /* Lighter text color for contrast */
+  padding: 1.5rem;
+  /* Making sure it doesn't overlap content if Hyde's fixed sidebar is used at wider screens */
 }
 
-.sidebar a {
-  color: #fff;
+.sidebar-about h1 {
+  font-family: 'Open Sans', sans-serif; /* Consistent font */
+  font-size: 2.0rem; /* Slightly smaller, more refined */
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar .lead {
+  color: #bdc3c7; /* Softer lead text color */
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-nav {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-nav-item {
+  color: #ecf0f1;
   display: block;
-  padding: 0.25rem 0;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+  font-size: 1.0rem;
 }
 
-.sidebar a:hover {
-  color: #f8f9fa;
+.sidebar-nav-item:hover,
+.sidebar-nav-item:focus {
+  color: #ffffff;
+  background-color: #34495e; /* Subtle hover background */
+  border-left-color: #3498db; /* Accent color for active/hover */
   text-decoration: none;
 }
 
-.page-title {
-  margin-top: 0;
+.sidebar-nav-item.active {
+  font-weight: bold;
+  color: #ffffff;
+  border-left-color: #3498db; /* Accent color for active item */
+}
+
+.sidebar p {
+  color: #bdc3c7;
+  font-size: 0.85rem;
+}
+
+.sidebar a {
+ color: #3498db; /* Brighter link color */
+ text-decoration: none;
+}
+
+.sidebar a:hover, .sidebar a:focus {
+  color: #5dade2;
+  text-decoration: underline;
+}
+
+
+/* Typography Enhancements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif; /* Using Open Sans for headers too for consistency */
+  color: #2c3e50; /* Dark blue-gray for headers */
+  margin-top: 1.5em;
+  margin-bottom: 0.7em;
+  line-height: 1.3;
+}
+
+h1 { font-size: 2.8rem; font-weight: 700; }
+h2 { font-size: 2.2rem; font-weight: 700; }
+h3 { font-size: 1.8rem; font-weight: 700; }
+h4 { font-size: 1.4rem; font-weight: 700; }
+h5 { font-size: 1.2rem; font-weight: bold; }
+h6 { font-size: 1.0rem; font-weight: bold; }
+
+.page-title, .post-title { /* Specific overrides for page/post titles if needed */
+  color: #3498db; /* Accent color for titles */
+  margin-bottom: 1rem;
+}
+.page-title a, .post-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.post-date {
+  color: #7f8c8d; /* Softer color for post dates */
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem; /* Slightly larger body text for readability */
+  color: #555;
+}
+
+a {
+  color: #2980b9; /* Standard link color */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover, a:focus {
+  color: #1f618d; /* Darker shade on hover */
+  text-decoration: underline;
+}
+
+/* Code blocks and inline code */
+pre, code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.9rem;
+}
+
+code {
+  background-color: #eef1f3; /* Light background for inline code */
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  color: #c0392b; /* A distinct color for inline code */
+}
+
+pre {
+  background-color: #2d3748; /* Darker background for code blocks */
+  color: #e2e8f0; /* Light text for code blocks */
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto; /* Allow scrolling for wide code blocks */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid #3498db; /* Accent color for blockquote border */
+  padding: 0.5rem 1.5rem;
+  margin: 1.5rem 0;
+  background-color: #f4f7f6; /* Slight background tint */
+  color: #555;
+  font-style: italic;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+th, td {
+  border: 1px solid #dfe6e9; /* Lighter table borders */
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f3f5; /* Light background for table headers */
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9fafb; /* Zebra striping for table rows */
+}
+
+/* Buttons (if any are used or for future use) */
+.button, button, input[type="submit"], input[type="button"] {
+  display: inline-block;
+  background-color: #3498db; /* Primary button color */
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: #2980b9; /* Darker on hover */
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Utility classes */
+.text-center { text-align: center; }
+.mt-1 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 1rem; }
+/* Add more as needed */
+
+/* Make sure content area is distinct from sidebar on wider screens with Hyde theme */
+@media (min-width: 48em) { /* Corresponds to Hyde's breakpoint */
+  .content {
+    /* margin-left is handled by Hyde theme's .content style based on sidebar width */
+    /* Ensure our content style doesn't conflict with Hyde's layout */
+    /* The padding and background are the main things we add here */
+  }
 }
