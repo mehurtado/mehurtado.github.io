@@ -19,7 +19,13 @@ gem "jekyll-paginate"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-sitemap"
 end
+
+# Gems required for Ruby 3.4 with Jekyll
+gem "csv"
+gem "logger"
+gem "base64"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
