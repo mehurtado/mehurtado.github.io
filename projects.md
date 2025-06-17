@@ -10,4 +10,5 @@ Research project exploring machine learning models for financial forecasting usi
 Interactive tool modeling disease spread using differential equations and data-driven parameters.
 
 ### N-Body Physics Engine
-A C++ engine that simulates gravitational interactions between many bodies in space.
+A C engine that simulates gravitational interactions between many bodies in space.
+
