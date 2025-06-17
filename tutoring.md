@@ -24,3 +24,6 @@ title: Tutoring
 ### Hourly Rate: $35/hr
  - First two sessions are half off!
  - I offer need-based price flexibility
+
+### Contact
+Feel free to reach out to me at [matthew.e.hurtado@gmail.com](mailto:matthew.e.hurtado@gmail.com).
