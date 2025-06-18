@@ -1,6 +1,6 @@
-# My Personal Website
+# My Portfolio
 
-This repository hosts the source code for my personal website.
+This repository hosts the source code for my portfolio website.
 
 ## About Me
 
