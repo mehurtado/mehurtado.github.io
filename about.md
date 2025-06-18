@@ -9,4 +9,4 @@ I am a senior at Rensselaer Polytechnic Institute pursuing degrees in mathematic
 I live in Troy, NY where I tutor students both privately and through the university. Much of my time is devoted to research projects, some of which are highlighted on the [projects](/projects) page.
 
 ## Resume
-See my [Resume](assets/Matthew_Hurtado_Revised_Resume.pdf)
+See my [Resume](assets/Matthew_Hurtado_Resume.pdf)
