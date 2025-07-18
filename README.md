@@ -18,5 +18,5 @@ This repository hosts the source code for my portfolio website.
 
 ## Contact
 
-[Email](matthew.e.hurtado@gmail.com)
-[Phone](201-887-2400)
+- Email: matthew.e.hurtado@gmail.com 
+- Phone: 201-887-2400
