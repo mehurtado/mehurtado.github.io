@@ -12,7 +12,7 @@ This repository hosts the source code for my portfolio website.
 
 ## Links
 
-- GitHub: [Link to GitHub profile]
+- GitHub: [[Link to GitHub profile]](https://github.com/mehurtado)
 - LinkedIn: [Link to LinkedIn profile]
 - Twitter: [Link to Twitter profile]
 
