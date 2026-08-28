@@ -1,0 +1,3 @@
+## 2024-05-18 - Added `aria-current="page"` to navigation links
+**Learning:** Found that the active sidebar navigation links were missing the semantic `aria-current="page"` attribute for screen readers, despite having a visual `.active` class. Additionally, the condition for matching the Home link (`page.url == site.baseurl`) was failing because `site.baseurl` was empty `''` but `page.url` was `'/'`.
+**Action:** When adding active link states to navigation, ensure `aria-current="page"` is used alongside visual active classes. Make sure to accurately match the `page.url` for the root path (e.g. `'/'` instead of relying solely on `site.baseurl` when it's empty).
