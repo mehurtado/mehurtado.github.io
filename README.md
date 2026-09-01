@@ -4,7 +4,7 @@ This repository hosts the source code for my portfolio website.
 
 ## About Me
 
-[TODO]
+I am a senior at Rensselaer Polytechnic Institute pursuing degrees in mathematics and computer science. My passion for these subjects drives my research and tutoring work.
 
 ## Content
 
