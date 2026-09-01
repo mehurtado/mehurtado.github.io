@@ -4,11 +4,15 @@ This repository hosts the source code for my portfolio website.
 
 ## About Me
 
-[TODO]
+I am a senior at Rensselaer Polytechnic Institute pursuing degrees in mathematics and computer science.
 
 ## Content
 
-[TODO]
+This repository contains the source code for my portfolio website, built with Jekyll. Key files include:
+- `index.md`: The homepage welcoming visitors.
+- `about.md`: Information about my background and resume.
+- `projects.md`: A list of my software and research projects.
+- `tutoring.md`: Details regarding my tutoring services and rates.
 
 ## Links
 
