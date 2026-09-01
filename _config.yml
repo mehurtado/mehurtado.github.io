@@ -28,9 +28,6 @@ plugins:
 # Custom vars
 version: 2.1.0 # Or update to a new version number for your site changes
 
-# Theme settings (if your theme supports them, Hyde is fairly minimal here)
-# sidebar_sticky: true # Example, Hyde might not use this directly in _config.yml
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
